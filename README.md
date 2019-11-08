@@ -6,10 +6,14 @@ Make sure you have have node and npm installed. Then ...
 
 * Inside the main folder run `npm install` to install the dependencies.
 * Run `npm i -g react-native-cli` to install command line tools
+* (for IOS) move into the folder `./ios` and run `pod install`
 
 # Deploying to IOS
 * Make sure you are in a MacOs environment with XCode installed
 * Inside the main folder run `react-native run-ios`
+
+To run it on Xcode:
+* Open the file `rn_ios_eggplant/ios/rn_ios_eggplant.xcworkspace`
 
 # Deploying to Android
 * Make sure you have android SDK installed
