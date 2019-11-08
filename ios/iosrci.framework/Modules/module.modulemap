@@ -1,0 +1,11 @@
+framework module iosrci {
+  umbrella header "iosrci.h"
+
+  export *
+  module * { export * }
+}
+
+module iosrci.Swift {
+    header "iosrci-Swift.h"
+    requires objc
+}

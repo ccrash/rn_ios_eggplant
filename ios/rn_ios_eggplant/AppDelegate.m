@@ -5,6 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+#import <iosrci/iosrci.h>
+
 #import "AppDelegate.h"
 
 #import <React/RCTBridge.h>
@@ -27,6 +29,12 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+
+  RCISetup.sharedInstance.tenancyId = @"cfa4d637-4e77-43a3-9704-d21432775034"; //Required
+  RCISetup.sharedInstance.clientId = @"abcde-12345"; //Required
+  //  RCISetup.sharedInstance.userId = @"test user id"; //Optiona
+  
   return YES;
 }
 
